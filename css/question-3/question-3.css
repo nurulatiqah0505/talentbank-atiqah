@@ -1,0 +1,14 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    /* Define the properties to transition */
+}
+
+.box:hover {
+    background-color: red;
+    /* Change background color on hover */
+    transform: scale(1.2);
+    /* Scale up the box on hover */
+}

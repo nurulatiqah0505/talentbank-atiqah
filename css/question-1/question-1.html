@@ -1,0 +1,86 @@
+<!-- This code creates a clean and functional layout for a webpage with a logo, 
+ responsive navigation, and structured content. It effectively utilizes HTML, CSS, 
+ and JavaScript to provide a user-friendly experience across different devices, 
+ ensuring that navigation links are accessible whether on mobile or desktop. 
+ The design features a clear visual hierarchy, making it easy for users to interact with
+  the content and find information quickly. -->
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question-1.css">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <img class="logo" src="logo.png" alt="Talentbank logo" width="200" height="20">
+
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">⋮</button>
+
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a class="header-link">About Us</a></li>
+                        <li><a class="header-link">Hall of Fame</a></li>
+                        <li><a class="header-link">Solutions</a></li>
+                        <li><a class="header-link">Contact Us</a></li>
+                        <li><a class="header-link">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="desktop-nav">
+                <a class="header-link">About Us</a>
+                <a class="header-link">Hall of Fame</a>
+                <a class="header-link">Solutions</a>
+                <a class="header-link">Contact Us</a>
+                <a class="header-link">Careers</a>
+            </div>
+        </nav>
+    </div>
+
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center; font-family: Arial, sans-serif;">
+        <h1>Talentbank</h1>
+    </div>
+
+    <div style="overflow:auto">
+
+        <div class="main">
+            <h2>Bespoke Recruitment & Employer Branding Solutions </h2>
+            <p>Talentbank is a talent management platform designed to connect employers with potential employees
+                through innovative recruitment solutions. It typically focuses on streamlining the hiring process,
+                enhancing candidate experience, and utilizing data-driven insights to identify the best talent for
+                organizations.</p>
+
+            <p>Talentbank delivers cutting-edge solutions to our clients, both locally and globally. We specialise
+                in bespoke, highly customised solutions to address your hiring or employer branding challenges.
+                If you possess a visionary employer branding or recruitment idea and believe that Talentbank can bring
+                it to life for your organisation, we encourage you to schedule a 15-minute chat with our CEO to explore
+                innovative solutions!</p>
+        </div>
+
+        <div class="right">
+            <img src="image.png" alt="image" style="width:100%;">
+            <div class="centered">
+                <h2>Talentbank</h2>
+                <p>We take pride in bridging the gap between these talented candidates and esteemed industry leaders who
+                    are on the lookout for unparalleled, world-class talent to elevate their organisations.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;font-family: Arial, sans-serif;">
+        © copyright 2024</div>
+
+</body>
+
+</html>
+<script>
+    document.querySelector('.dropbtn').addEventListener('click', function () {
+        const dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+</script>

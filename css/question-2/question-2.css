@@ -1,0 +1,12 @@
+/* Styling the first letter of the paragraph */
+p::first-letter {
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+/* Styling the first line of the paragraph */
+p::first-line {
+    font-weight: bold;
+    color: green;
+}
